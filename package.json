@@ -18,7 +18,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "tsup",
+    "build": "tsup && node scripts/use-client.mjs",
     "dev": "tsup --watch",
     "type-check": "tsc --noEmit",
     "demo:dev": "cd demo && npm run dev",
