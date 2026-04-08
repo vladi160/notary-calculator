@@ -1,0 +1,61 @@
+{
+  "name": "notary-calculator",
+  "version": "1.0.0",
+  "description": "Bulgarian notary fee calculator React component for real estate transactions (Тарифа за нотариалните такси към ЗННД)",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "type-check": "tsc --noEmit",
+    "demo:dev": "cd demo && npm run dev",
+    "demo:build": "cd demo && npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "keywords": [
+    "notary",
+    "calculator",
+    "bulgaria",
+    "bulgarian",
+    "real-estate",
+    "недвижими имоти",
+    "нотариус",
+    "bgn",
+    "react",
+    "component"
+  ],
+  "author": "vladi160",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vladi160/notary-calculator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vladi160/notary-calculator/issues"
+  },
+  "homepage": "https://vladi160.github.io/notary-calculator"
+}

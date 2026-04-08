@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env
+
+# demo build output (deployed to GitHub Pages)
+demo/dist/
+demo/node_modules/
