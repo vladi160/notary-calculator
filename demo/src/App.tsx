@@ -96,22 +96,23 @@ export default function App() {
       </section>
 
       <section className="demo-section">
-        <h2>EUR price with fixed EUR/BGN rate</h2>
+        <h2>EUR price — matching Bulgarian standard config</h2>
         <p className="section-desc">
-          Set <code>config.levaToCourse</code> to 1.95583 to convert EUR prices.
-          The fee tiers (defined in BGN by law) are applied correctly.
+          Uses <code>levaToCourse: 1.96</code>, <code>taxesFeePercent: 3</code>,{" "}
+          <code>regFeePercent: 0.1</code> — the same values used in production real-estate sites.
+          Results should match exactly when the same price is entered.
         </p>
         <NotaryCalculator
-          defaultPrice={76700}
+          defaultPrice={65999}
           dictionary={{
             ...(lang === "en" ? EN_DICTIONARY : {}),
-            currency: "€",
+            currency: "EUR",
             title:
               lang === "en"
                 ? "Notary fees — price in EUR"
                 : "Нотариални такси — цена в EUR",
           }}
-          config={{ levaToCourse: 1.95583, taxesFeePercent: 3 }}
+          config={{ levaToCourse: 1.96, taxesFeePercent: 3, regFeePercent: 0.1 }}
           classNames={{
             container: "nc nc-card",
             title: "nc-title",
