@@ -1,6 +1,6 @@
 {
   "name": "notary-calculator",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Bulgarian notary fee calculator React component for real estate transactions (Тарифа за нотариалните такси към ЗННД)",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
