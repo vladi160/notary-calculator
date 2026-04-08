@@ -206,7 +206,7 @@ The notary fee tiers are defined in BGN. Set `levaToCourse` to `1.95583` and the
 ```tsx
 <NotaryCalculator
   defaultPrice={76_700}
-  config={{ levaToCourse: 1.95583 }}
+  config={{ levaToCourse: 1.95583, taxesFeePercent: 3 }}
   dictionary={{ currency: "€" }}
 />
 ```

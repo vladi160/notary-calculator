@@ -111,7 +111,7 @@ export default function App() {
                 ? "Notary fees — price in EUR"
                 : "Нотариални такси — цена в EUR",
           }}
-          config={{ levaToCourse: 1.95583 }}
+          config={{ levaToCourse: 1.95583, taxesFeePercent: 3 }}
           classNames={{
             container: "nc nc-card",
             title: "nc-title",
